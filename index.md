@@ -1,17 +1,14 @@
----
-layout: cv
-title: Larra Lapid's CV
----
 # Larra Lapid  
 ServiceNow Expert | Founder of Somastack
 
 
-ServiceNow expert with 5 years of experience. Experienced in leading technical delivery with alignment to IT processes and business needs while maintaining adherence to ServiceNow best practices.  
+ServiceNow expert with 8 years of experience. Experienced in leading technical delivery with alignment to IT processes and business needs while maintaining adherence to ServiceNow best practices.  
 
 <div id="webaddress">
 <a href="mailto:larra@somastack.com">larra@somastack.com</a>
-| <a href="https://www.linkedin.com/in/larralapid/">My LinkedIn Page</a>
-| <a href="#" onclick="window.print(); return false;">Save as PDF</a>
+| <a href="https://www.linkedin.com/in/larralapid/">Linkedin</a>
+| <a href="https://www.githb.com/larralapid/">Github</a>
+
 </div>
 
 ---
@@ -23,12 +20,16 @@ Actively seeking technical ServiceNow role as architect, developer, implementer,
 ## Specialized in (ServiceNow)
 
 - ITSM
+- ITOM
+    - Discovery
+    - Service Mapping
+- ITAM
+- CSM
+- ITBM
 - Performance Analytics & Reporting 
 - Upgrades 
 - Integrations 
-- Service Catalog 
 - Next Experience UI
-- ITBM
 - Service Portal
 
 ---
@@ -109,8 +110,3 @@ __General Electric — Global Cincinnati Operations__
 
 ---
 
-
-
-<!-- ### Footer
-
-Last updated: September 2023 -->
