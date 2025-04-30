@@ -5,7 +5,7 @@
 ---
 
 ## 🔍 Summary  
-ServiceNow expert with 8+ years of experience delivering process-driven, technical implementations across **Customer Service Management (CSM)** and **IT Service Management (ITSM)**. Specialized in building scalable, user-friendly solutions using **Service Portal**, **Configurable Workspace**, and **Performance Analytics**. Skilled at integrating and optimizing workflows, automating support experiences, and designing custom applications that enhance customer and agent effectiveness. Proven ability to collaborate cross-functionally and drive measurable outcomes through thoughtful architecture and agile delivery.
+ServiceNow expert with 8+ years of experience delivering process-driven, technical implementations across **Customer Service Management (CSM)** and **IT Service Management (ITSM)**. Specialized in building scalable, user-friendly solutions using **Service Portal**, **Configurable Workspaces**, and **Performance Analytics**. Skilled at integrating and optimizing workflows, automating support experiences, and designing custom applications that enhance customer and agent effectiveness. Proven ability to collaborate cross-functionally and drive measurable outcomes through thoughtful architecture and agile delivery.
 ---
 
 ## 💼 Employment History  
