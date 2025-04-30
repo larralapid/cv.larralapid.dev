@@ -1,112 +1,76 @@
 # Larra Lapid  
-ServiceNow Expert | Founder of Somastack
-
-
-ServiceNow expert with 8 years of experience. Experienced in leading technical delivery with alignment to IT processes and business needs while maintaining adherence to ServiceNow best practices.  
-
-<div id="webaddress">
-<a href="mailto:larra@somastack.com">larra@somastack.com</a>
-| <a href="https://www.linkedin.com/in/larralapid/">Linkedin</a>
-| <a href="https://www.githb.com/larralapid/">Github</a>
-
-</div>
+**ServiceNow CSM & ITSM Developer | Founder of Somastack**  
+[LinkedIn](https://www.linkedin.com/in/larralapid/) | [GitHub](https://www.github.com/larralapid) | mail@larralapid.dev  
 
 ---
 
-## Currently
+## 🔍 Summary  
+ServiceNow expert with 8+ years of experience delivering process-driven, technical implementations across **Customer Service Management (CSM)** and **IT Service Management (ITSM)**. Specialized in building scalable, user-friendly solutions using **Service Portal**, **Configurable Workspace**, and **Performance Analytics**. Skilled at integrating and optimizing workflows, automating support experiences, and designing custom applications that enhance customer and agent effectiveness. Proven ability to collaborate cross-functionally and drive measurable outcomes through thoughtful architecture and agile delivery.
+---
 
-Actively seeking technical ServiceNow role as architect, developer, implementer, or administrator.
+## 💼 Employment History  
 
-## Specialized in (ServiceNow)
+### **Somastack**  
+**Founder | Technical Solutions Consultant**  
+*Sept 2023 – Present*  
+- Founded Somastack to provide consulting and technical solutions focused on ServiceNow and process optimization.  
+- Specialize in scalable solutions across ITSM and ITOM.  
+- Lead end-to-end project management and deliver technical solutions that streamline business processes for clients.  
 
-- ITSM
-- ITOM
-    - Discovery
-    - Service Mapping
-- ITAM
-- CSM
-- ITBM
-- Performance Analytics & Reporting 
-- Upgrades 
-- Integrations 
-- Next Experience UI
-- Service Portal
+### **Appriss – an Equifax Company** (Remote)  
+**ServiceNow Engineer**  
+*Nov 2020 – Sept 2023*  
+- Maintained instance health and executed upgrade planning and platform deployments.  
+- Led technical backlog grooming, sprint planning, and solution architecture.  
+- Delivered integrated solutions across ITSM using best practices.  
+- Collaborated across business and engineering to streamline operational support workflows.  
+
+### **CloudPires, Cincinnati**  
+**Senior ServiceNow Developer**  
+*Dec 2017 – Aug 2020*  
+- Delivered consulting services focused on ITSM, CSM, and ITOM.  
+- Supported and enhanced ServiceNow applications across client backlogs.
+- Created a custom **Report Authoring Tool** application for Booz Allen Hamilton, built for an intelligence operations team
+  - Aggregated data from multiple sources.  
+  - Integrated with CSM for tracking report requests and delivery.  
+- Designed and deployed a **custom pricing calculator** application for CBTS.  
+  - Supported domain-separated instance.  
+  - Integrated with CSM for customer-facing workflows.  
+- Built and maintained REST/SOAP integrations, configured ACLs, and optimized workflows.  
+- Collaborated directly with client teams to gather requirements and deliver scalable, user-centered solutions.  
+
+### **General Electric – Global Cincinnati Ops**  
+**Accounts Payable Analyst**  
+*Jan 2017 – Jun 2017*  
+- Maintained GRNI/GRIR ledgers and reconciled discrepancies across healthcare subsidiaries.
 
 ---
 
-## Fellowships & Leadership
+## 🛠️ Skills & Certifications  
 
-`2023`  
-__New Leaders Council, SW Ohio Chapter__  
-- Cohort Member
+### **Core ServiceNow Modules & Features**  
+- **CSM**, **ITSM**, **ITOM**, **ITAM**, **ITBM**, HR Integrations  
+- Discovery, Service Mapping, Flow Designer, Next Experience UI, Service Portal, Configurable Workspace  
+- Performance Analytics, Virtual Agent, IntegrationHub, ATF, App Portfolio Mgmt  
 
----
-
-## Awards
-
-- 2nd Place, ServiceNow's Knowledge Conference Hackathon, 2020
-- 2nd Place, ServiceNow's Knowledge Conference Hackathon, 2019
-
----
-
-## Employment History
-
-`2023 - Present`  
-__Somastack__  
-- Founder
-- Technical solutions consulting.
-
-`Nov 2020 - Present`  
-__Appriss - an Equifax Company, Remote__  
-- ServiceNow Engineer  
-- Responsible for instance maintenance, platform upgrades, and code deployments.
-- Led backlog grooming sessions and architected enhanced solutions.
-
-`Dec 2017 - Aug 2020`  
-__CloudPires, Cincinnati__  
-- Senior ServiceNow Developer  
-- Provided consulting services tailored to ServiceNow platform customers.
-- Managed client projects and ensured alignment with IT processes and business needs.
-
-`Jan 2017 - Jun 2017`  
-__General Electric — Global Cincinnati Operations__  
-- Accounts Payable Analyst  
-- Maintained GRNI/GRIR sub-ledgers for GE Healthcare subsidiary.
-- Worked under tight deadlines to identify discrepancies and variances.
-
----
-
-## Skills & Certifications
+### **Certifications**  
 - Certified System Administrator  
-- Certified Application Developer 
-- Micro-certifications
-    - Virtual Agent
-    - Predictive Intelligence
-    - Automated Test Framework
-    - Enterprise Onboarding and Transitions
-    - Integration Hub
-    - Application Portfolio Management
-    - HR Integrations
-    - ServiceNow Platform Subscription Model
-    - Flow Designer
-    - Agile and Test Management Implementation
-    - Asset Models Management
-    - Performance Analytics
+- Certified Application Developer  
+- Micro-Certs: Virtual Agent, Predictive Intelligence, APM, HR Integrations, etc.  
 
-
-### Technical Skills  
-- Web development
-- Agile Methodologies  
-- ITIL  
-- Python  
-- SQL  
-- REST APIs  
-- CI/CD Pipelines
-- AI tooling and prompt engineering
-- CLI programs & shell scripting
-- Webflow
-- Shopify
-
+### **Technical Skills**  
+- Python, SQL, REST APIs  
+- Agile, ITIL, CI/CD Pipelines  
+- CLI & Shell scripting  
+- AI prompt engineering, Webflow, Shopify  
 
 ---
 
+## 🏆 Awards  
+- 🥈 2nd Place – ServiceNow Knowledge Hackathon 2020  
+- 🥈 2nd Place – ServiceNow Knowledge Hackathon 2019  
+
+---
+
+## 🌱 Leadership & Community  
+- **New Leaders Council (SW Ohio)** – 2023 Cohort Member  
