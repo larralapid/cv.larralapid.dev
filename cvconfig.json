@@ -1,20 +1,25 @@
 {
   "basics": {
     "name": "Larra Lapid",
-    "label": "Software developer + technical solutions consultant",
-    "summary": "Cincinnati based ServiceNow developer",
-    "website": "cv.larralapid.dev",
-    "phone": "513-514-9041",
-    "email": "larralapid@gmail.com",
+    "label": "ServiceNow Developer | ITSM & CSM | Custom Application Development",
+    "summary": "ServiceNow developer and technical solutions consultant with 9 years of experience from 2017 to present, focused on ITSM, CSM, custom application development, workflow automation, and platform delivery. Experienced translating business requirements into scalable ServiceNow designs across Service Portal, Configurable Workspace, Flow Designer, Performance Analytics, IntegrationHub, REST/SOAP integrations, ACLs, upgrades, and release support. Current Peraton work centers on ServiceNow custom application development in an NDA-restricted environment. Strong background combining hands-on platform engineering, consulting solutioning, and practical delivery discipline.",
+    "website": "https://cv.larralapid.dev",
+    "phone": "",
+    "email": "mail@larralapid.dev",
     "picture": "",
     "location": {
       "address": "",
       "postalCode": "45041",
       "city": "Cincinnati",
       "countryCode": "US",
-      "State": "OH"
+      "region": "OH"
     },
     "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "larralapid",
+        "url": "https://www.linkedin.com/in/larralapid/"
+      },
       {
         "network": "GitHub",
         "username": "larralapid",
@@ -24,192 +29,187 @@
   },
   "work": [
     {
+      "company": "Peraton",
+      "website": "https://www.peraton.com",
+      "position": "ServiceNow Developer",
+      "startDate": "2026-01-01",
+      "summary": "Develops and maintains a custom ServiceNow application in an NDA-restricted environment.",
+      "highlights": [
+        "Develop and maintain a custom ServiceNow application in an NDA-restricted environment; project details cannot be disclosed.",
+        "Build maintainable platform functionality across application logic, workflows, forms, data models, security controls, and user experience refinements.",
+        "Partner with project stakeholders to translate requirements into ServiceNow development work while protecting sensitive program information."
+      ]
+    },
+    {
+      "company": "West Monroe",
+      "website": "https://www.westmonroe.com",
+      "position": "ServiceNow Technical Solutions Consultant - ITSM & CSM",
+      "startDate": "2025-06-01",
+      "endDate": "2025-10-31",
+      "summary": "Supported go-to-market and solutioning preparation for ServiceNow ITSM and CSM offerings.",
+      "highlights": [
+        "Assisted in preparing go-to-market materials for ServiceNow ITSM and CSM offerings while client engagements were not yet ready for delivery.",
+        "Developed reusable sales enablement, solutioning, and implementation planning content for ServiceNow opportunities.",
+        "Mapped ITSM and CSM capabilities to customer service, support operations, process improvement, and platform modernization use cases."
+      ]
+    },
+    {
       "company": "Somastack",
-      "website": "http://somastack.com",
-      "position": "Technical Solutions Consultant, Founder",
-      "startDate": "01-01-2024",
-      "summary": "Provides strategic technical consulting and develops innovative solutions for scalable systems.",
+      "website": "https://somastack.com",
+      "position": "Founder | Technical Solutions Consultant",
+      "startDate": "2023-09-01",
+      "summary": "Founded an independent technical consulting practice focused on ServiceNow, automation, and process improvement.",
       "highlights": [
-        "Founded Somastack to deliver high-impact technical solutions across industries.",
-        "Architected AI-driven automation frameworks for workflow optimization.",
-        "Developed open-source tooling and internal libraries to streamline DevOps processes."
+        "Founded an independent technical consulting practice focused on ServiceNow, automation, and process improvement.",
+        "Designed practical solution approaches for ITSM, CSM, workflow optimization, integrations, and technical enablement.",
+        "Built tooling and documentation to improve delivery consistency and operational clarity."
       ]
     },
     {
-      "company": "Appriss Insights, An Equifax Company",
+      "company": "Appriss - an Equifax Company",
       "position": "ServiceNow Engineer",
-      "startDate": "November 2020",
-      "endDate": "September 2023",
-      "summary": "Designed and enhanced ServiceNow implementations, focusing on automation, security, and compliance.",
+      "startDate": "2020-11-01",
+      "endDate": "2023-09-30",
+      "summary": "Maintained and enhanced ServiceNow implementations with emphasis on ITSM delivery, upgrades, and platform governance.",
       "highlights": [
-        "Redesigned enterprise-level ServiceNow workflows to improve process efficiency.",
-        "Integrated real-time data pipelines for compliance reporting across multiple platforms.",
-        "Developed custom applications in ServiceNow to support identity verification and fraud detection."
+        "Maintained ServiceNow instance health, supported upgrade planning, and executed platform deployments.",
+        "Led technical backlog grooming, sprint planning, and solution architecture for ServiceNow delivery work.",
+        "Delivered integrated ITSM solutions using ServiceNow best practices and release governance.",
+        "Collaborated across business and engineering teams to streamline operational support workflows."
       ]
     },
     {
-      "company": "Cloudpires",
+      "company": "CloudPires",
       "position": "Senior ServiceNow Developer",
-      "startDate": "December 2017",
-      "endDate": "October 2020",
-      "summary": "Led development and customization of ServiceNow solutions to enhance ITSM and business operations.",
+      "startDate": "2017-12-01",
+      "endDate": "2020-08-31",
+      "summary": "Delivered ServiceNow consulting services across ITSM, CSM, ITOM, custom applications, and integrations.",
       "highlights": [
-        "Built a high-availability ServiceNow instance supporting large-scale enterprise operations.",
-        "Led the migration of legacy ITSM systems into ServiceNow, reducing ticket resolution complexities.",
-        "Designed a scalable knowledge management portal within ServiceNow to improve internal documentation processes."
+        "Delivered ServiceNow consulting services across ITSM, CSM, ITOM, custom applications, and integrations.",
+        "Supported and enhanced ServiceNow applications across multiple client backlogs.",
+        "Created a custom Report Authoring Tool application for Booz Allen Hamilton, built for an intelligence operations team; aggregated data from multiple sources and integrated with CSM for tracking report requests and delivery.",
+        "Designed and deployed a custom pricing calculator application for CBTS on a domain-separated instance with CSM customer-facing workflows.",
+        "Built and maintained REST/SOAP integrations, configured ACLs, optimized workflows, and collaborated directly with client teams."
+      ]
+    },
+    {
+      "company": "General Electric - Global Cincinnati Operations",
+      "position": "Accounts Payable Analyst",
+      "startDate": "2017-01-01",
+      "endDate": "2017-06-30",
+      "summary": "Maintained GRNI/GRIR ledgers and reconciled discrepancies across healthcare subsidiaries.",
+      "highlights": [
+        "Maintained GRNI/GRIR ledgers and reconciled discrepancies across healthcare subsidiaries."
       ]
     }
   ],
   "skills": [
     {
-      "name": "Programming Languages",
+      "name": "ServiceNow Modules & Platform",
+      "level": "advanced",
+      "keywords": [
+        "ITSM",
+        "CSM",
+        "ITOM",
+        "ITAM",
+        "ITBM",
+        "HR integrations",
+        "Scoped applications",
+        "Service Portal",
+        "Configurable Workspace",
+        "Next Experience UI"
+      ]
+    },
+    {
+      "name": "ServiceNow Development",
+      "level": "advanced",
+      "keywords": [
+        "Custom application development",
+        "Forms",
+        "Tables",
+        "Business rules",
+        "ACLs",
+        "Flow Designer",
+        "Workflow automation",
+        "IntegrationHub",
+        "Virtual Agent",
+        "Automated Test Framework"
+      ]
+    },
+    {
+      "name": "Technical Skills",
       "level": "advanced",
       "keywords": [
         "JavaScript",
         "Python",
-        "Lua",
-        "SQL"
-      ]
-    },
-    {
-      "name": "ServiceNow & IT Service Management",
-      "level": "advanced",
-      "keywords": [
-        "ServiceNow (ITSM, ITBM, CSM, Performance Analytics)",
-        "Office 365 Admin",
-        "Google Workspace Admin",
-        "Azure",
-        "Active Directory"
-      ]
-    },
-    {
-      "name": "Development Frameworks & Tools",
-      "level": "advanced",
-      "keywords": [
-        "Node.js",
-        "React",
+        "SQL",
+        "REST APIs",
+        "SOAP APIs",
+        "CLI tools",
+        "Shell scripting",
         "Git",
         "GitHub",
-        "Supabase",
-        "Vercel"
+        "CI/CD pipelines"
       ]
     },
     {
-      "name": "Project Management & Collaboration",
-      "level": "intermediate",
-      "keywords": [
-        "JIRA",
-        "Confluence",
-        "Atlassian Admin",
-        "Agile Methodologies"
-      ]
-    },
-    {
-      "name": "Operating Systems & Infrastructure",
+      "name": "Delivery & Consulting",
       "level": "advanced",
       "keywords": [
-        "Ubuntu",
-        "System Administration",
-        "Cloud Services"
+        "Agile delivery",
+        "ITIL-aligned process design",
+        "Backlog grooming",
+        "Sprint planning",
+        "Technical documentation",
+        "Go-to-market materials",
+        "Solutioning",
+        "AI tooling and prompt engineering"
       ]
     }
   ],
   "volunteer": [
     {
-      "flavor": "volunteer",
-      "organization": "Princeton City School District",
-      "position": "STARS Reading Program Mentor",
-      "startDate": "2014-08",
-      "endDate": "2015-05",
-      "category": "Children"
-    },
-    {
-      "flavor": "volunteer",
-      "organization": "Susan G. Komen",
-      "position": "Race Volunteer",
-      "startDate": "2014-09",
-      "endDate": "Present",
-      "category": "Health"
-    },
-    {
-      "flavor": "volunteer",
-      "organization": "Shared Harvest Foodbank",
-      "position": "Food Drive Coordinator",
-      "startDate": "2014-11",
-      "endDate": "Present",
-      "category": "Poverty Alleviation",
-      "summary": "Organized 'Harvest for The Hungry' food drive for Macy’s Inc corporate office."
-    },
-    {
-      "flavor": "volunteer",
-      "organization": "Macy’s",
-      "position": "Bag Hunger Campaign Participant",
-      "startDate": "2015-03",
-      "endDate": "2016-03",
-      "category": "Poverty Alleviation"
-    },
-    {
-      "flavor": "volunteer",
-      "organization": "Heritage Hill Elementary School",
-      "position": "Food Drive Coordinator",
-      "startDate": "2015-12",
-      "endDate": "Present",
-      "category": "Poverty Alleviation"
-    },
-    {
-      "flavor": "volunteer",
-      "organization": "ArtsWave",
-      "position": "Macy’s Social Media Representative",
-      "startDate": "2016-02",
-      "endDate": "Present",
-      "category": "Arts and Culture",
-      "links": [
-        "https://twitter.com/macys_artswave",
-        "https://www.instagram.com/macys_artswave/"
-      ]
-    },
-    {
-      "flavor": "volunteer",
-      "organization": "United Way of Greater Cincinnati",
-      "position": "The Shift Team Member",
-      "startDate": "2016-09",
-      "endDate": "2016-12",
-      "category": "Social Services",
-      "website": "https://www.theshiftcincy.com"
+      "flavor": "leadership",
+      "organization": "New Leaders Council, SW Ohio Chapter",
+      "position": "Cohort Member",
+      "startDate": "2023",
+      "endDate": "2023",
+      "category": "Leadership"
     }
   ],
   "awards": [
     {
       "flavor": "award",
-      "url": "https://www.servicenow.com/blogs/2019/servicenow-hackathon-winners-2019",
-      "title": "ServiceNow Knowledge 2019 Hackathon Winner - 2nd place, mobile virtual agent",
-      "date": "2019",
-      "awarder": "ServiceNow",
-      "summary": "ServiceNow described the project as 'Taking advantage of the fact that Virtual Agent can be set up to be public facing, the runner-up team created an app that automates customer identification for the process of renting or checking out cars."
-    },
-    {
-      "flavor": "industry",
-      "title": "ServiceNow Knowledge 2020 Hackathon Winner - 2nd place, Zoom/ServiceNow integration",
+      "url": "https://www.servicenow.com/blogs/2020/knowledge-2020-hackathon-winners",
+      "title": "ServiceNow Knowledge Hackathon - 2nd Place",
       "date": "2020",
       "awarder": "ServiceNow",
-      "summary": "An ML powered custom ServiceNow integration with Zoom meetings platform.",
-      "url": "https://www.servicenow.com/blogs/2020/knowledge-2020-hackathon-winners"
+      "summary": "2nd Place for a Zoom and ServiceNow integration project."
+    },
+    {
+      "flavor": "award",
+      "url": "https://www.servicenow.com/blogs/2019/servicenow-hackathon-winners-2019",
+      "title": "ServiceNow Knowledge Hackathon - 2nd Place",
+      "date": "2019",
+      "awarder": "ServiceNow",
+      "summary": "2nd Place for a mobile virtual agent project."
     }
   ],
   "interests": [
     {
-      "name": "GitHub",
-      "summary": "Regular GitHub user and tinkerer.",
+      "name": "Open Source",
+      "summary": "Regular GitHub user and builder of practical tooling.",
       "keywords": [
         "GitHub",
-        "Open Source"
+        "Open Source",
+        "Automation"
       ]
     }
   ],
   "languages": [
     {
       "language": "English",
-      "level": "native"
+      "level": "Native"
     },
     {
       "language": "Tagalog",
@@ -218,18 +218,6 @@
     {
       "language": "Spanish",
       "level": "Proficient"
-    },
-    {
-      "language": "Javascript",
-      "level": "Advanced"
-    },
-    {
-      "language": "Python",
-      "level": "Advanced"
-    },
-    {
-      "language": "SQL",
-      "level": "Advanced"
     }
   ]
 }
