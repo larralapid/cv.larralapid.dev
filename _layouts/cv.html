@@ -1,16 +1,686 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} CV</title>
-  <link href="media/{{ site.style }}-screen.css" type="text/css" rel="stylesheet" media="screen">
-  <link href="media/{{ site.style }}-print.css" type="text/css" rel="stylesheet" media="print">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Larra Lapid — ServiceNow Developer</title>
+  <meta name="description" content="Larra Lapid · ServiceNow Developer · ITSM, CSM, and custom application development." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:       #ffffff;
+      --panel:    #f4f4f5;
+      --rule:     #e4e4e7;
+      --rule-2:   #ededef;
+      --ink:      #0a0a0a;
+      --ink-2:    #262626;
+      --text:     #3f3f46;
+      --muted:    #71717a;
+      --muted-2:  #a1a1aa;
+
+      --lime:        #c6ec3a;
+      --lime-soft:   #e9f7a8;
+      --lime-deep:   #6e8418;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: var(--bg); }
+
+    body {
+      margin: 0;
+      font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 14.5px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      font-feature-settings: "calt" 1, "liga" 1;
+    }
+
+    ::selection { background: var(--lime); color: var(--ink); }
+
+    a {
+      color: var(--ink-2);
+      text-decoration: none;
+      border-bottom: 1px solid var(--muted-2);
+      padding-bottom: 1px;
+      transition: border-color .15s, background .15s;
+    }
+    a:hover {
+      border-bottom-color: var(--ink);
+      background: var(--lime-soft);
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 40px 96px;
+    }
+
+    /* ───────── header ───────── */
+
+    header.intro {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+      align-items: end;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 40px;
+    }
+
+    header.intro h1 {
+      font-size: clamp(36px, 5.5vw, 56px);
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      line-height: 1;
+      margin: 0 0 14px;
+      color: var(--ink);
+    }
+    header.intro h1 .mark {
+      background: linear-gradient(180deg, transparent 60%, var(--lime) 60%, var(--lime) 92%, transparent 92%);
+      padding: 0 2px;
+    }
+
+    header.intro .role {
+      font-size: 14.5px;
+      color: var(--ink-2);
+      font-weight: 500;
+      margin: 0;
+    }
+    header.intro .role .sep { color: var(--muted-2); padding: 0 8px; }
+
+    header.intro .contact {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 4px 18px;
+      font-size: 12.5px;
+      color: var(--muted);
+      text-align: right;
+      align-self: end;
+    }
+    header.intro .contact .k {
+      color: var(--muted-2);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+    header.intro .contact a {
+      color: var(--ink-2);
+      border-bottom-style: dotted;
+    }
+
+    /* ───────── sections ───────── */
+
+    section { margin-top: 44px; }
+    section:first-of-type { margin-top: 0; }
+
+    h2 {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 22px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    h2::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: var(--lime);
+      flex-shrink: 0;
+    }
+    h2::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    /* ───────── summary ───────── */
+
+    .summary {
+      color: var(--text);
+      max-width: 72ch;
+      font-size: 14.5px;
+    }
+    .summary p { margin: 0 0 12px; }
+    .summary p:last-child { margin: 0; }
+    .summary strong { color: var(--ink); font-weight: 600; }
+
+    /* ───────── experience ───────── */
+
+    .job {
+      display: grid;
+      grid-template-columns: 158px 1fr;
+      gap: 32px;
+      padding: 20px 0;
+      border-top: 1px solid var(--rule-2);
+    }
+    .job:first-of-type { border-top: none; padding-top: 4px; }
+
+    .job .when {
+      font-size: 12.5px;
+      color: var(--muted);
+      letter-spacing: 0.01em;
+      padding-top: 4px;
+    }
+    .job .when .now {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--ink-2);
+      font-weight: 500;
+      background: var(--lime);
+      padding: 1px 6px;
+      border-radius: 2px;
+      margin-right: 4px;
+    }
+    .job .when .now::before {
+      content: "";
+      width: 5px; height: 5px;
+      background: var(--ink);
+      border-radius: 50%;
+    }
+    .job .when .range { display: block; margin-top: 2px; }
+
+    .job .body h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.005em;
+    }
+    .job .body .org {
+      font-size: 13.5px;
+      color: var(--ink-2);
+      margin: 2px 0 12px;
+    }
+    .job .body .org .where {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .job ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .job ul li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 6px;
+      color: var(--text);
+      font-size: 13.5px;
+      line-height: 1.65;
+      max-width: 68ch;
+    }
+    .job ul li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 8px;
+      height: 1px;
+      background: var(--muted-2);
+    }
+
+    /* ───────── skills (grouped, plain) ───────── */
+
+    .skill-group {
+      display: grid;
+      grid-template-columns: 158px 1fr;
+      gap: 32px;
+      padding: 14px 0;
+      border-top: 1px solid var(--rule-2);
+    }
+    .skill-group:first-of-type { border-top: none; padding-top: 2px; }
+
+    .skill-group .label {
+      font-size: 12.5px;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      padding-top: 6px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .chip {
+      display: inline-block;
+      font-size: 12.5px;
+      color: var(--ink-2);
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      padding: 4px 10px;
+      border-radius: 3px;
+      line-height: 1.4;
+      transition: background .15s, border-color .15s;
+    }
+    .chip:hover {
+      background: var(--lime-soft);
+      border-color: var(--lime-deep);
+    }
+    .chip.is-primary {
+      background: var(--lime);
+      border-color: var(--lime);
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* ───────── certifications ───────── */
+
+    .certs-primary {
+      list-style: none;
+      margin: 0 0 20px;
+      padding: 0;
+      display: grid;
+      gap: 8px;
+    }
+    .certs-primary li {
+      font-size: 14px;
+      color: var(--ink-2);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 14px;
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--lime);
+      border-radius: 2px;
+    }
+    .certs-primary li .badge {
+      font-size: 10.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--lime-deep);
+      font-weight: 600;
+    }
+
+    .micro-label {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0 0 10px;
+      letter-spacing: 0.02em;
+    }
+
+    /* ───────── awards & community ───────── */
+
+    .award-row {
+      display: grid;
+      grid-template-columns: 158px 1fr;
+      gap: 32px;
+      padding: 10px 0;
+      border-top: 1px solid var(--rule-2);
+      font-size: 13.5px;
+    }
+    .award-row:first-of-type { border-top: none; padding-top: 0; }
+    .award-row .year { color: var(--muted); }
+    .award-row .what { color: var(--ink-2); }
+    .award-row .what .place { color: var(--lime-deep); font-weight: 600; }
+    .award-row .what .org { color: var(--muted); }
+
+    /* ───────── footer ───────── */
+
+    footer {
+      margin-top: 64px;
+      padding-top: 22px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 11.5px;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+    footer .updated { color: var(--muted-2); }
+
+    /* ───────── responsive ───────── */
+
+    @media (max-width: 720px) {
+      .page { padding: 36px 22px 64px; }
+      header.intro {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 18px;
+      }
+      header.intro .contact {
+        text-align: left;
+        grid-template-columns: auto 1fr;
+      }
+      .job, .skill-group, .award-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .job .when, .skill-group .label, .award-row .year {
+        font-size: 12px;
+        padding-top: 0;
+      }
+    }
+
+    /* ───────── print ───────── */
+
+    @media print {
+      html, body { background: #fff; }
+      .page { padding: 28px; max-width: none; }
+      section { page-break-inside: avoid; margin-top: 24px; }
+      .job, .award-row { page-break-inside: avoid; }
+      a { border-bottom: none; color: var(--ink-2); }
+      h2::before { background: #c6ec3a !important; }
+    }
+  </style>
 </head>
 <body>
-  <div id="main">
-    <div id="content">
-    {{ content }}
-    </div>
-  </div>
+  <main class="page">
+
+    <!-- ───────── header ───────── -->
+    <header class="intro">
+      <div>
+        <h1><span class="mark">Larra Lapid</span></h1>
+        <p class="role">
+          ServiceNow Developer
+          <span class="sep">+</span>
+          technical solutions expert
+        </p>
+      </div>
+      <div class="contact">
+        <span class="k">Email</span><span><a href="mailto:mail@larralapid.dev">mail@larralapid.dev</a></span>
+        <span class="k">LinkedIn</span><span><a href="https://www.linkedin.com/in/larralapid/" target="_blank" rel="noopener">linkedin.com/in/larralapid</a></span>
+        <span class="k">GitHub</span><span><a href="https://www.github.com/larralapid" target="_blank" rel="noopener">github.com/larralapid</a></span>
+      </div>
+    </header>
+
+    <!-- ───────── summary ───────── -->
+    <section aria-labelledby="s-summary">
+      <h2 id="s-summary">Summary</h2>
+      <div class="summary">
+        <p>
+          <strong>ServiceNow developer and technical solutions consultant</strong> with 9 years of experience focused on ITSM, CSM, custom application development, workflow automation, and platform delivery.
+        </p>
+        <p>
+          Translates business requirements into scalable ServiceNow designs across Service Portal, Configurable Workspaces, integrations, and platform upgrades.
+        </p>
+        <p>
+          Currently federally contracted, focused on ServiceNow custom application development in an NDA-restricted environment.
+        </p>
+      </div>
+    </section>
+
+    <!-- ───────── experience ───────── -->
+    <section aria-labelledby="s-exp">
+      <h2 id="s-exp">Experience</h2>
+
+      <article class="job">
+        <div class="when">
+          <span class="now">Now</span>
+          <span class="range">Jan 2026 — Present</span>
+        </div>
+        <div class="body">
+          <h3>ServiceNow Developer</h3>
+          <div class="org">Peraton</div>
+          <ul>
+            <li>Develop and maintain a custom ServiceNow application in an NDA-restricted environment; project details cannot be disclosed.</li>
+            <li>Build platform functionality across application logic, workflows, forms, data models, security controls, and UI.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when">
+          <span class="range">Jun 2025 — Oct 2025</span>
+        </div>
+        <div class="body">
+          <h3>ServiceNow Technical Solutions Consultant — CSM</h3>
+          <div class="org">West Monroe</div>
+          <ul>
+            <li>Built go-to-market materials and reusable sales enablement, solutioning, and implementation planning content for ServiceNow CSM offerings.</li>
+            <li>Mapped ITSM and CSM capabilities to customer service, support operations, process improvement, and platform modernization use cases.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when">
+          <span class="now">Now</span>
+          <span class="range">Sept 2023 — Present</span>
+        </div>
+        <div class="body">
+          <h3>Founder &amp; Technical Solutions Consultant</h3>
+          <div class="org">Somastack</div>
+          <ul>
+            <li>Independent technical solutions consulting practice. Technical solutioning and advisory for ServiceNow.</li>
+            <li>Additional services include web development, custom tailored automations, and custom applications.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when">
+          <span class="range">Nov 2020 — Sept 2023</span>
+        </div>
+        <div class="body">
+          <h3>ServiceNow Engineer</h3>
+          <div class="org">Appriss <span class="where">/ an Equifax Company</span></div>
+          <ul>
+            <li>Maintained instance health, supported upgrade planning, and executed platform deployments.</li>
+            <li>Led technical backlog grooming, sprint planning, and solution architecture for ServiceNow delivery work.</li>
+            <li>Partnered with business and engineering teams to streamline operational support workflows.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when">
+          <span class="range">Dec 2017 — Aug 2020</span>
+        </div>
+        <div class="body">
+          <h3>Senior ServiceNow Developer</h3>
+          <div class="org">CloudPires <span class="where">/ Cincinnati, OH</span></div>
+          <ul>
+            <li>Delivered ServiceNow consulting across ITSM, CSM, ITOM, custom applications, and integrations.</li>
+            <li>Supported and enhanced ServiceNow applications across multiple client backlogs.</li>
+            <li>Built a custom Report Authoring Tool for a reputable security federal contractor's intelligence operations team — aggregated data from multiple sources and integrated with CSM for tracking report requests and delivery.</li>
+            <li>Designed and deployed a custom pricing calculator for a telecommunications company on a domain-separated instance, integrated with CSM for customer-facing workflows.</li>
+            <li>Built and maintained integrations and optimized workflows.</li>
+            <li>Gathered requirements directly with client teams to deliver scalable, user-centered solutions.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when">
+          <span class="range">Jan 2017 — Jun 2017</span>
+        </div>
+        <div class="body">
+          <h3>Accounts Payable Analyst</h3>
+          <div class="org">General Electric <span class="where">/ Global Cincinnati Operations</span></div>
+          <ul>
+            <li>Maintained GRNI / GRIR ledgers and reconciled discrepancies across healthcare subsidiaries.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- ───────── ServiceNow focus ───────── -->
+    <section aria-labelledby="s-focus">
+      <h2 id="s-focus">ServiceNow Focus</h2>
+
+      <div class="skill-group">
+        <div class="label">Products</div>
+        <div class="chips">
+          <span class="chip is-primary">ITSM</span>
+          <span class="chip is-primary">CSM</span>
+          <span class="chip">ITOM</span>
+          <span class="chip">ITAM</span>
+          <span class="chip">ITBM</span>
+          <span class="chip">HR Integrations</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="label">Platform</div>
+        <div class="chips">
+          <span class="chip">Custom Application Development</span>
+          <span class="chip">Scoped Applications</span>
+          <span class="chip">Forms &amp; Tables</span>
+          <span class="chip">Business Rules</span>
+          <span class="chip">ACLs</span>
+          <span class="chip">Flow Designer</span>
+          <span class="chip">Workflow Automation</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="label">Experiences</div>
+        <div class="chips">
+          <span class="chip">Service Portal</span>
+          <span class="chip">Configurable Workspace</span>
+          <span class="chip">Next Experience UI</span>
+          <span class="chip">Virtual Agent</span>
+          <span class="chip">Performance Analytics</span>
+          <span class="chip">IntegrationHub</span>
+          <span class="chip">Automated Test Framework</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="label">Delivery</div>
+        <div class="chips">
+          <span class="chip">Platform Upgrades</span>
+          <span class="chip">Release Support</span>
+          <span class="chip">Backlog Grooming</span>
+          <span class="chip">Sprint Planning</span>
+          <span class="chip">Technical Documentation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── technical skills ───────── -->
+    <section aria-labelledby="s-skills">
+      <h2 id="s-skills">Technical Skills</h2>
+
+      <div class="skill-group">
+        <div class="label">Languages</div>
+        <div class="chips">
+          <span class="chip">JavaScript</span>
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Shell</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="label">Integrations</div>
+        <div class="chips">
+          <span class="chip">REST APIs</span>
+          <span class="chip">SOAP APIs</span>
+          <span class="chip">CLI Tools</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="label">Practice</div>
+        <div class="chips">
+          <span class="chip">Agile Delivery</span>
+          <span class="chip">ITIL-aligned Process Design</span>
+          <span class="chip">CI/CD Pipelines</span>
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="label">Tooling</div>
+        <div class="chips">
+          <span class="chip">AI Tooling &amp; Prompt Engineering</span>
+          <span class="chip">Webflow</span>
+          <span class="chip">Shopify</span>
+          <span class="chip">Lightweight Automation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── certifications ───────── -->
+    <section aria-labelledby="s-certs">
+      <h2 id="s-certs">Certifications</h2>
+
+      <ul class="certs-primary">
+        <li>
+          <span class="badge">Certified</span>
+          <span>ServiceNow Certified System Administrator</span>
+        </li>
+        <li>
+          <span class="badge">Certified</span>
+          <span>ServiceNow Certified Application Developer</span>
+        </li>
+      </ul>
+
+      <p class="micro-label">ServiceNow Micro-certifications</p>
+      <div class="chips">
+        <span class="chip">Virtual Agent</span>
+        <span class="chip">Predictive Intelligence</span>
+        <span class="chip">Automated Test Framework</span>
+        <span class="chip">Enterprise Onboarding &amp; Transitions</span>
+        <span class="chip">IntegrationHub</span>
+        <span class="chip">Application Portfolio Management</span>
+        <span class="chip">HR Integrations</span>
+        <span class="chip">Platform Subscription Model</span>
+        <span class="chip">Flow Designer</span>
+        <span class="chip">Agile &amp; Test Management Implementation</span>
+        <span class="chip">Asset Models Management</span>
+        <span class="chip">Performance Analytics</span>
+      </div>
+    </section>
+
+    <!-- ───────── awards & community ───────── -->
+    <section aria-labelledby="s-extras">
+      <h2 id="s-extras">Awards &amp; Community</h2>
+
+      <div class="award-row">
+        <div class="year">2023</div>
+        <div class="what">
+          New Leaders Council, SW Ohio Chapter
+          <span class="org">— Cohort Member</span>
+        </div>
+      </div>
+      <div class="award-row">
+        <div class="year">2020</div>
+        <div class="what">
+          <span class="place">2nd Place</span> · ServiceNow Knowledge Hackathon
+        </div>
+      </div>
+      <div class="award-row">
+        <div class="year">2019</div>
+        <div class="what">
+          <span class="place">2nd Place</span> · ServiceNow Knowledge Hackathon
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="updated">Last updated <span id="lastUpdated">—</span></span>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      const d = new Date();
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      const el = document.getElementById('lastUpdated');
+      if (el) el.textContent = `${months[d.getMonth()]} ${d.getFullYear()}`;
+    })();
+  </script>
 </body>
 </html>
