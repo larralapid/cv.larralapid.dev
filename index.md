@@ -7,7 +7,9 @@
 
 ## Summary
 
-ServiceNow developer and technical solutions consultant with 9 years of experience from 2017 to present, focused on ITSM, CSM, custom application development, workflow automation, and platform delivery. Experienced translating business requirements into scalable ServiceNow designs across Service Portal, Configurable Workspace, Flow Designer, Performance Analytics, IntegrationHub, REST/SOAP integrations, ACLs, upgrades, and release support. Current Peraton work centers on ServiceNow custom application development in an NDA-restricted environment. Strong background combining hands-on platform engineering, consulting solutioning, and practical delivery discipline.
+ServiceNow developer and technical solutions consultant with 9 years of experience from 2017 to present, focused on ITSM, CSM, custom application development, workflow automation, and platform delivery. Experienced translating business requirements into scalable ServiceNow designs across Service Portal, Configurable Workspaces, integrations, and platform upgrades. 
+
+Currently federally contracted work centers on ServiceNow custom application development in an NDA-restricted environment. Strong background combining hands-on platform engineering, consulting solutioning, and practical delivery discipline.
 
 ---
 
@@ -22,10 +24,10 @@ ServiceNow developer and technical solutions consultant with 9 years of experien
 - Partner with project stakeholders to translate requirements into ServiceNow development work while protecting sensitive program information.
 
 ### **West Monroe**
-**ServiceNow Technical Solutions Consultant - ITSM & CSM**  
+**ServiceNow Technical Solutions Consultant - CSM**  
 *Jun 2025 - Oct 2025*
 
-- Assisted in preparing go-to-market materials for ServiceNow ITSM and CSM offerings while client engagements were not yet ready for delivery.
+- Provided technical expertise on creation of go-to-market materials for ServiceNow CSM offerings while client engagements were not yet ready for delivery.
 - Developed reusable sales enablement, solutioning, and implementation planning content for ServiceNow opportunities.
 - Mapped ITSM and CSM capabilities to customer service, support operations, process improvement, and platform modernization use cases.
 
@@ -33,11 +35,9 @@ ServiceNow developer and technical solutions consultant with 9 years of experien
 **Founder | Technical Solutions Consultant**  
 *Sept 2023 - Present*
 
-- Founded an independent technical consulting practice focused on ServiceNow, automation, and process improvement.
-- Designed practical solution approaches for ITSM, CSM, workflow optimization, integrations, and technical enablement.
-- Built tooling and documentation to improve delivery consistency and operational clarity.
+- Provide technical solutions for small ServiceNow teams. 
 
-### **Appriss - an Equifax Company** (Remote)
+### **Appriss - an Equifax Company** 
 **ServiceNow Engineer**  
 *Nov 2020 - Sept 2023*
 
